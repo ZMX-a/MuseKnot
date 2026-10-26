@@ -1,0 +1,21 @@
+/* Touch and installed-window layout. Existing reading content stays unchanged. */
+.pwa-install{border-top:1px solid #dfdfd7;padding-top:12px;font-size:13px;line-height:1.7}.pwa-install summary{cursor:pointer;color:#285a3b}.pwa-install p{margin:12px 0}.pwa-install button{margin-top:12px;width:100%}
+.pwa-connection{position:fixed;top:env(safe-area-inset-top,0px);left:12px;right:12px;z-index:2500;padding:12px 16px;background:#fff0cf;color:#543d17;border:1px solid #c8aa6c;border-radius:8px;font:14px/1.6 system-ui;box-shadow:0 3px 20px #0002}
+.long-image-save-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+@media(pointer:coarse){button,.btn,.account-menu summary,.pwa-install summary{min-height:44px}input:not([type=checkbox]):not([type=radio]),textarea,select{font-size:16px!important}.thread-order button{min-width:60px}}
+@media(max-width:600px){
+ .account-screen{box-sizing:border-box;min-height:100dvh;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+ .account-corner{bottom:calc(14px + env(safe-area-inset-bottom,0px));right:14px;min-height:44px}
+ .account-menu{bottom:calc(70px + env(safe-area-inset-bottom,0px));max-height:calc(100dvh - 100px - env(safe-area-inset-bottom,0px) - env(safe-area-inset-top,0px))}
+ .retreat-app .content:not(.graph-mode){padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+ .record-timeline,.journal-detail,.thread-note-content{min-width:0;overflow-wrap:anywhere}
+ .long-image-backdrop{box-sizing:border-box;padding:calc(8px + env(safe-area-inset-top,0px)) 8px calc(8px + env(safe-area-inset-bottom,0px))}
+ .long-image-dialog{box-sizing:border-box;max-height:100%;width:100%;padding:16px}
+ .long-image-dialog header{gap:12px}.long-image-previews figcaption{flex-wrap:wrap;gap:10px}.long-image-save-actions{width:100%;justify-content:flex-start}
+ .long-image-dialog button,.long-image-dialog a{min-height:44px;box-sizing:border-box}
+ .thread-dialog-backdrop{padding:10px;box-sizing:border-box}.thread-dialog{box-sizing:border-box;max-height:calc(100dvh - 30px);width:100%}
+ .thread-choice{min-height:44px;box-sizing:border-box}.thread-choice small{max-width:30%;overflow-wrap:anywhere}
+ .writing-overlay .editor-head{padding-top:calc(14px + env(safe-area-inset-top,0px))}.writing-overlay .editor-foot{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+ .record-entry-actions,.record-history-actions{flex-wrap:wrap}
+}
+@media(display-mode:standalone){body{overscroll-behavior-y:none}.retreat-app .topbar{padding-top:max(20px,env(safe-area-inset-top,0px))}}

@@ -1,0 +1,19 @@
+.account-screen{min-height:100vh;display:grid;place-items:center;background:#f5f1e6;color:#243426;padding:24px;font-family:system-ui,sans-serif}
+.account-card{width:min(100%,420px);background:white;border:1px solid #dfdfd7;padding:36px;box-shadow:0 20px 60px #14281a12}
+.account-card h1{font-family:Georgia,serif;font-size:2.3rem;margin:12px 0}.account-card p{line-height:1.6;color:#4e5a50}
+.account-mark{letter-spacing:.3em;color:#52704f}.account-card label{display:block;margin:18px 0;font-size:.9rem}
+.account-card input{display:block;width:100%;box-sizing:border-box;margin-top:7px;padding:12px;border:1px solid #aeb8aa;border-radius:4px;font:inherit;background:#fff;color:#182e1e}
+.account-card button[type=submit],.account-card>button:first-of-type{width:100%;padding:13px;background:#1d3b29;color:white;border:0;border-radius:4px;font:inherit;cursor:pointer}
+.account-card button:disabled{opacity:.55;cursor:wait}.account-link{display:block;margin:12px auto 0;border:0;background:none;color:#285a3b;padding:10px;font:inherit;cursor:pointer}
+.account-recovery{display:block;overflow-wrap:anywhere;background:#eef3ed;border:1px solid #cdd9ca;padding:16px;margin:18px 0;line-height:1.6;user-select:all}
+.account-error{color:#9b2525!important}.account-corner{position:fixed;right:18px;bottom:18px;z-index:1000;border:1px solid #9faf99;background:#fff;color:#203b29;border-radius:30px;padding:10px 16px;cursor:pointer}
+.account-menu{position:fixed;right:18px;bottom:70px;z-index:1001;background:white;border:1px solid #c9d2c7;box-shadow:0 12px 36px #0002;padding:16px;display:grid;gap:12px;max-width:calc(100vw - 36px);overflow-wrap:anywhere}
+.account-menu button{padding:9px 12px;background:#f5f6f1;border:1px solid #d1d9cf;cursor:pointer}
+.account-card{box-sizing:border-box;border-radius:10px}.account-card h1{font-size:1.9rem}
+.account-password-field{margin:18px 0}.account-password-field>label{margin-bottom:7px}.account-password-row{position:relative}.account-password-row input{margin:0;padding-right:64px}
+.account-password-toggle{position:absolute;right:5px;top:5px;height:36px;border:0;background:transparent;color:#285a3b;padding:0 10px;cursor:pointer}
+.account-helper,.account-keep-login{display:block;font-size:.8rem;line-height:1.6;color:#536352;margin:8px 0}.account-card .account-keep-login{font-size:.8rem}
+.account-invite-ready{display:flex;align-items:center;gap:10px;background:#eef4ec;padding:12px;font-size:.85rem;border-radius:4px}.account-invite-ready button{margin-left:auto;border:0;background:none;color:#285a3b;cursor:pointer}
+.account-recovery-details{margin-top:24px;border-top:1px solid #dfdfd7;padding-top:18px}.account-recovery-details summary,.account-invitation summary{cursor:pointer;color:#285a3b}.account-secondary{padding:10px;border:1px solid #ccd6ca;background:#f5f6f1;border-radius:4px;cursor:pointer}
+.account-menu{width:340px;box-sizing:border-box;max-height:calc(100dvh - 100px);overflow-y:auto}.account-menu input{display:block;box-sizing:border-box;width:100%;padding:10px;margin:7px 0;border:1px solid #aeb8aa;border-radius:4px;font:inherit}.account-menu label{display:block;font-size:.85rem;margin:12px 0}.account-menu .account-password-row input{padding-right:64px}.account-menu .account-password-toggle{padding:0 10px;background:none;border:0;top:3px}.account-invitation{border-top:1px solid #dfdfd7;padding-top:12px}
+@media(max-width:480px){.account-screen{padding:16px}.account-card{padding:24px}.account-menu{right:12px;max-width:calc(100vw - 24px)}}

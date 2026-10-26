@@ -1,0 +1,23 @@
+[Unit]
+Description=MuseKnot notes service
+After=network.target
+
+[Service]
+Type=simple
+User=museknot
+Group=museknot
+WorkingDirectory=/opt/museknot
+EnvironmentFile=/etc/museknot.env
+# Replace this with the absolute path to your supported Node.js executable.
+ExecStart=/usr/local/bin/museknot-node /opt/museknot/server.mjs
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/museknot
+
+[Install]
+WantedBy=multi-user.target

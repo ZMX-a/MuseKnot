@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "MuseKnot · 灵感成结",
+  "short_name": "MuseKnot",
+  "description": "记下灵感，续写故事，连成脉络。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f1e6",
+  "theme_color": "#f5f1e6",
+  "icons": [
+    {"src":"./assets/pwa/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"./assets/pwa/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"./assets/pwa/icon-maskable.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ]
+}

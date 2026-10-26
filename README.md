@@ -86,6 +86,6 @@ npm test
 
 ## 素材与许可
 
-源码使用 [MIT License](LICENSE)。开源版首页使用仓库中的原创 SVG 示意图，未包含私用部署中来源未确认的网上照片。截图只展示虚构内容。第三方依赖保留各自的许可证，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+源码使用 [MIT License](LICENSE)。开源版首页默认使用纯白背景，未包含私用部署中来源未确认的网上照片。截图只展示虚构内容。第三方依赖保留各自的许可证，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 自定义背景由使用者提供，不随源码或 MIT 许可分发。请仅上传自己拥有使用权的图片；自定义功能本身不会授予图片版权。恢复默认只移除背景关联，原图片仍保留在该账号的私有数据库与既有备份中。

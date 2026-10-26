@@ -1,4 +1,4 @@
-:root{--reading-font:'Noto Serif SC','Source Han Serif SC','Songti SC','SimSun',Georgia,serif;--paper:#fff;--nature-image:url('./assets/tree-summer.jpg')}
+:root{--reading-font:'Noto Serif SC','Source Han Serif SC','Songti SC','SimSun',Georgia,serif;--paper:#fff;--nature-image:none}
 .retreat-app{background:var(--paper);--bg:var(--paper);--surface:var(--paper);--bg-2:#e5eedf;--ink:#304734;--ink-soft:#526b53;--muted:#70806b;--line:#d4dfce;--line-soft:#e2eadd}
 .retreat-app.sanctuary-home{display:block;height:100dvh}.sanctuary-home>.sidebar,.sanctuary-home>.main>.topbar{display:none}.sanctuary-home>.main{height:100%}.sanctuary-home .content{padding:0}
 .sanctuary{position:relative;isolation:isolate;width:100%;height:100%;min-height:500px;background:#eaf1df;overflow:hidden;color:#2d452f}.sanctuary-images{position:absolute;inset:0 0 0 28%;z-index:-2;background:#254a30}.nature-image{display:block;width:100%;height:100%;object-fit:cover;object-position:55% 76%;filter:saturate(.85) brightness(.91)}.sanctuary-wash{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(234,241,223,.98) 0%,rgba(226,238,211,.95) 20%,rgba(183,210,164,.78) 37%,rgba(96,145,91,.34) 55%,rgba(37,84,51,0) 72%),linear-gradient(0deg,rgba(20,68,38,.24),transparent 34%)}
@@ -155,3 +155,20 @@ html[data-theme="dark"] .sanctuary::before { background:rgba(0,0,0,.18); }
   .sanctuary-footer { grid-row:4; }
   .sanctuary .nature-image { object-position:58% 50%; }
 }
+
+/* No stock photograph is loaded until this account chooses a background. */
+html .sanctuary.is-plain { background:#fff; color:#253b2c; }
+html .sanctuary.is-plain::before { display:none; }
+.sanctuary.is-plain .sanctuary-header,.sanctuary.is-plain .sanctuary-brand,
+.sanctuary.is-plain .sanctuary-footer,.sanctuary.is-plain .sanctuary-mark { color:#253b2c; }
+.sanctuary.is-plain .sanctuary-invitation h1 { color:#253b2c; text-shadow:none; }
+.sanctuary.is-plain .begin-writing { color:#345a41; border-color:#7c9381; }
+.sanctuary.is-plain .begin-writing:hover { color:#183d25; border-color:#183d25; }
+.sanctuary.is-plain .sanctuary-library { color:#253b2c; border-color:#dbe2d9; background:#fff; }
+.sanctuary.is-plain .sanctuary-library:hover { background:#f4f7f2; }
+.sanctuary.is-plain .sanctuary-recent-head,.sanctuary.is-plain .sanctuary-recent-head button { color:#526b53; }
+.sanctuary.is-plain .sanctuary-recent-item { background:#fff; color:#304734; border-color:#dbe2d9; box-shadow:none; }
+.sanctuary.is-plain .sanctuary-recent-item:hover { background:#f4f7f2; }
+.sanctuary.is-plain .sanctuary-recent-excerpt { color:#526b53; }
+.sanctuary.is-plain .sanctuary-recent-meta { color:#657561; }
+.sanctuary.is-plain .sanctuary-recent-meta span { color:#456c4d; }

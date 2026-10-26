@@ -51,4 +51,4 @@ MIT. The public edition uses an original SVG illustration and synthetic screensh
 
 ### Personal backgrounds
 
-Open Account → 首页背景 to choose PNG, JPEG or WebP (up to 8 MB) or restore the default. Uploaded backgrounds are stored behind the same account authentication as note images, and never become repository assets. Only upload images you have the right to use. Reset removes the setting; previously uploaded images remain in the private database and existing backups.
+Open Account → 首页背景 to choose PNG, JPEG or WebP (up to 8 MB) or restore the plain white default. Uploaded backgrounds are stored behind the same account authentication as note images, and never become repository assets. Only upload images you have the right to use. Reset removes the setting; previously uploaded images remain in the private database and existing backups.

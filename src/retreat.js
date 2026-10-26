@@ -1,10 +1,12 @@
 import React from 'react';
 import htm from 'htm';
+import { useHomeBackground } from './home-background.js';
 const html = htm.bind(React.createElement);
 
 export function Retreat({ onNew, onList, recent = [], onOpenRecent }) {
+  const { url } = useHomeBackground();
   return html`<section className="sanctuary" aria-label="MuseKnot 首页">
-    <div className="sanctuary-images" aria-hidden="true"><img className="nature-image" src="./assets/tree-illustration.svg" alt="" fetchpriority="high" /></div>
+    <div className="sanctuary-images" aria-hidden="true"><img className="nature-image" src=${url || './assets/tree-illustration.svg'} alt="" fetchpriority="high" /></div>
     <div className="sanctuary-wash"></div>
     <header className="sanctuary-header"><span className="sanctuary-brand">MuseKnot</span><button className="sanctuary-library" onClick=${onList}>我的笔记 <span aria-hidden="true">↗</span></button></header>
     <div className="sanctuary-invitation"><h1>在这里，<br/>写一点。</h1><button className="begin-writing" onClick=${onNew} aria-label="记录"><span>＋ 记录</span><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></button></div>

@@ -12,3 +12,5 @@ Manual checks to repeat on supported browsers and real phones:
 - On supported phones, use the native image share panel as well as download or long-press save.
 
 Screenshots published in docs/screenshots/ use only synthetic data and the original SVG shipped in this repository. Machine-specific testing scripts from the private workspace are intentionally excluded.
+
+Background checks cover file limits, failed uploads, account switches and authenticated metadata/image isolation. Manually verify Account → 首页背景 on a real phone: upload, reload, another account, restore default, and confirm original notes remain unchanged.

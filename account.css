@@ -17,3 +17,7 @@
 .account-recovery-details{margin-top:24px;border-top:1px solid #dfdfd7;padding-top:18px}.account-recovery-details summary,.account-invitation summary{cursor:pointer;color:#285a3b}.account-secondary{padding:10px;border:1px solid #ccd6ca;background:#f5f6f1;border-radius:4px;cursor:pointer}
 .account-menu{width:340px;box-sizing:border-box;max-height:calc(100dvh - 100px);overflow-y:auto}.account-menu input{display:block;box-sizing:border-box;width:100%;padding:10px;margin:7px 0;border:1px solid #aeb8aa;border-radius:4px;font:inherit}.account-menu label{display:block;font-size:.85rem;margin:12px 0}.account-menu .account-password-row input{padding-right:64px}.account-menu .account-password-toggle{padding:0 10px;background:none;border:0;top:3px}.account-invitation{border-top:1px solid #dfdfd7;padding-top:12px}
 @media(max-width:480px){.account-screen{padding:16px}.account-card{padding:24px}.account-menu{right:12px;max-width:calc(100vw - 24px)}}
+
+.home-background-settings { border-top: 1px solid #ddd; padding-top: 12px; }
+.home-background-settings summary { cursor: pointer; }
+.home-background-settings input[type="file"] { max-width: 100%; font-size: 13px; }

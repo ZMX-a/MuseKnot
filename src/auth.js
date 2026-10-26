@@ -4,6 +4,7 @@ import { request, setCurrentUser, activeUserId } from './cloud.js';
 import { localRepository } from './db.js';
 import { importLegacy, legacyBundle } from './import-local.js';
 
+import { HomeBackgroundProvider, HomeBackgroundSettings } from './home-background.js';
 import { PwaInstall } from './pwa.js';
 import { captureInvitation } from './account-flow.js';
 import { PasswordField, InvitationPanel, RecoveryStep } from './account-ui.js';
@@ -144,7 +145,7 @@ export function AuthGate({ children }) {
     <button disabled=${busy} onClick=${importLocal}>${busy?'正在导入…':'确认是我的记录并导入'}</button>
     <button className="account-link" disabled=${busy} onClick=${()=>setShowImport(false)}>稍后再导入</button>
   </section></main>`;
-  return html`<div className="account-app">
+  return html`<${HomeBackgroundProvider} key=${user.id} ownerId=${user.id}><div className="account-app">
     ${children}
     <button className="account-corner" onClick=${()=>setShowAccount(value=>!value)} aria-label="账号设置">账号</button>
     ${showAccount?html`<aside className="account-menu" aria-label="账号设置">
@@ -152,9 +153,10 @@ export function AuthGate({ children }) {
       ${hasLocal&&!imported?html`<button onClick=${()=>{setShowAccount(false);setShowImport(true);}}>导入本机旧记录</button>`:null}
       ${renewRecovery?html`<form onSubmit=${refreshRecovery}><p className="account-helper">生成后，旧恢复码会失效。请保存新的一份。</p><${PasswordField} label="确认账号密码" login=${true} /><button disabled=${busy}>生成恢复码</button><button type="button" disabled=${busy} onClick=${()=>setRenewRecovery(false)}>取消</button></form>`:html`<button onClick=${()=>setRenewRecovery(true)}>设置找回方式</button>`}
       <${InvitationPanel} initialInvite=${invite} />
+      <${HomeBackgroundSettings} />
       <${PwaInstall} />
       <button onClick=${logout}>退出登录</button>
       ${error?html`<p role="alert">${error}</p>`:null}
     </aside>`:null}
-  </div>`;
+  </div><//>`;
 }

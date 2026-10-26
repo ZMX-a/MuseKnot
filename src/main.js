@@ -905,6 +905,7 @@ function App() {
   };
   const handleClearAll = async () => {
     await db.clearAll();
+    window.dispatchEvent(new Event('museknot-data-cleared'));
     imageCache.clear();
     setInspirations([]);
     setIdeaThreads([]);

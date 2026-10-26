@@ -99,6 +99,14 @@ test('cloud accounts isolate notes, images and imports', async () => {
     const png=new Uint8Array([137,80,78,71,13,10,26,10]);
     assert.equal((await call('/images/pic-1','PUT',png,a.cookie,'image/png')).status,200);
     assert.equal((await call('/images/pic-1','GET',undefined,b.cookie)).status,404);
+    const beforeBackground=(await call('/notes','GET',undefined,a.cookie)).body;
+    assert.equal((await call('/meta/appearance%3Ahome-background','PUT',{imageId:'pic-1'},a.cookie)).status,200);
+    assert.deepEqual((await call('/meta/appearance%3Ahome-background','GET',undefined,a.cookie)).body.value,{imageId:'pic-1'});
+    assert.equal((await call('/meta/appearance%3Ahome-background','GET',undefined,b.cookie)).body.value,null);
+    assert.equal((await call('/images/pic-1')).status,401);
+    assert.equal((await call('/meta/appearance%3Ahome-background','PUT',null,a.cookie)).status,200);
+    assert.equal((await call('/images/pic-1','GET',undefined,a.cookie)).status,200,'reset does not delete existing pictures');
+    assert.deepEqual((await call('/notes','GET',undefined,a.cookie)).body,beforeBackground,'background changes preserve every note and history');
     assert.equal((await call('/images/bad','PUT',Buffer.from('not an image'),a.cookie,'image/png')).status,400);
     await call('/meta/mk-idea-threads','PUT',[{id:'existing-thread'}],a.cookie);
     const imported={notes:[{id:'legacy',body:'旧记录',createdAt:2,updatedAt:3}],threads:[{id:'legacy-thread'}],drafts:[['draft',{body:'old draft'}]]};

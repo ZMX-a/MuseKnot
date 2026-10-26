@@ -16,7 +16,7 @@
     "build": "node build.mjs",
     "dev": "node build.mjs --serve",
     "start": "node --env-file=.env server.mjs",
-    "test": "node verify.mjs && node --test tests/records.test.mjs tests/cloud.test.mjs tests/import-local.test.mjs tests/cloud-client.test.mjs tests/long-image.test.mjs tests/account-flow.test.mjs tests/pwa.test.mjs tests/note-name.test.mjs",
+    "test": "node verify.mjs && node --test tests/records.test.mjs tests/cloud.test.mjs tests/import-local.test.mjs tests/cloud-client.test.mjs tests/long-image.test.mjs tests/account-flow.test.mjs tests/pwa.test.mjs tests/note-name.test.mjs tests/home-background.test.mjs",
     "build:local": "node build.mjs --local-resolver",
     "backup": "node scripts/backup.mjs",
     "setup": "node scripts/setup-local.mjs",

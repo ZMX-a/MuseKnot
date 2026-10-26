@@ -48,3 +48,7 @@ See [self-hosting](docs/SELF_HOSTING.md), [architecture](docs/ARCHITECTURE.md), 
 ## License and assets
 
 MIT. The public edition uses an original SVG illustration and synthetic screenshots. The private deployment's unverified third-party photograph and all real notes, databases, secrets and server details are excluded. Dependencies keep their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).
+
+### Personal backgrounds
+
+Open Account → 首页背景 to choose PNG, JPEG or WebP (up to 8 MB) or restore the default. Uploaded backgrounds are stored behind the same account authentication as note images, and never become repository assets. Only upload images you have the right to use. Reset removes the setting; previously uploaded images remain in the private database and existing backups.

@@ -4,6 +4,10 @@
 
 MuseKnot 是一个可自行部署的个人记录与写作 PWA。你可以随手记灵感、写日记、整理角色设定，让一条记录随着时间不断续写；也可以把几条相关记录连成脉络，最后导出成长图保存或分享。
 
+**[在线体验 MuseKnot](https://49.233.131.211/museknot/#invite=579dff2e57dda58ad10435fd213462b9e78ebd2205d87a50)** · [建议与问题反馈](https://github.com/ZMX-a/MuseKnot/issues)
+
+打开体验链接后，邀请码会自动带入；使用邮箱和密码创建账号即可开始记录，已有账号可直接登录。体验内容保存在体验服务器中，各账号的数据相互隔离。体验后欢迎自愿到 GitHub Issues 反馈。
+
 [English](README_EN.md) · [本地运行](#本地运行) · [自行部署](docs/SELF_HOSTING.md) · [实现与取舍](docs/ARCHITECTURE.md) · [贡献指南](CONTRIBUTING.md)
 
 ![MuseKnot 首页：用户自定义背景示例，账号邮箱已移除](docs/screenshots/custom-background.png)
@@ -61,7 +65,7 @@ MuseKnot 让这些内容留在同一条记录里，同时保留每次续写的�
 
 ## 本地运行
 
-GitHub 仓库提供源码和说明。要实际使用，需要在自己的电脑或服务器运行应用；当前完整应用不能仅通过 GitHub Pages 提供。
+除在线体验外，你也可以使用仓库源码在自己的电脑或服务器运行应用。GitHub 提供源码和说明；当前完整应用不能仅通过 GitHub Pages 提供。
 
 需要 **Node.js 22.23.2+ 或 24.x** 和 npm。无需单独安装数据库。
 

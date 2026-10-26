@@ -4,6 +4,10 @@
 
 MuseKnot is a self-hosted personal writing PWA for ideas, journals, prose and character notes. Keep adding independent entries to a note over time, connect related notes into ordered threads, and export saved content as long images.
 
+**[Try MuseKnot online](https://49.233.131.211/museknot/#invite=579dff2e57dda58ad10435fd213462b9e78ebd2205d87a50)** · [Feedback and issues](https://github.com/ZMX-a/MuseKnot/issues)
+
+The invitation is filled in automatically. Create an account with your email and password to start writing, or sign in with an existing account. Content is stored on the hosted instance and isolated by account. Feedback through GitHub Issues is optional.
+
 [中文说明](README.md) · [Self-hosting](docs/SELF_HOSTING.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md)
 
 ![MuseKnot with a personal background; account email removed](docs/screenshots/custom-background.png)
@@ -45,7 +49,7 @@ Other features include search and tags, invite-only registration, recovery codes
 
 ## Run locally
 
-This repository contains source code, not a hosted account service. Run it on your own computer or server. The complete application needs its Node.js API and SQLite database; GitHub Pages alone cannot provide them.
+You can use the hosted instance linked above or run your own copy on a computer or server. GitHub hosts the source code. The complete application needs its Node.js API and SQLite database; GitHub Pages alone cannot provide them.
 
 Requires **Node.js 22.23.2+ or 24.x** and npm. No separate database installation is needed.
 
